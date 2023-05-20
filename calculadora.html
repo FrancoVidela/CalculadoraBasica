@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>type="text/javascript"
+         function suma()
+         {
+          
+             var numero1=document.getElementById("txtNumero1").value;
+             var numero2=document.getElementById("txtNumero2").value;
+             numero1 = parseFloat(numero1);
+             numero2 = parseFloat(numero2);
+             var resultado ="";
+             var resultado = numero1 + numero2;
+             document.getElementById("resultado").innerHTML = resultado; 
+     
+         }
+             
+      
+         function resta()
+         {
+            
+            var numero1=document.getElementById("txtNumero1").value;
+             var numero2=document.getElementById("txtNumero2").value;
+             numero1 = parseInt(numero1);
+             numero2 = parseInt(numero2);
+         
+             var resultado = numero1 - numero2;
+            
+             document.getElementById("resultado").innerHTML = resultado;    
+         }
+             
+      
+         function multiplicar()
+         {
+            
+            var numero1=document.getElementById("txtNumero1").value;
+             var numero2=document.getElementById("txtNumero2").value; 
+
+             numero1 = parseInt(numero1);
+             numero2 = parseInt(numero2);
+         
+             var resultado = numero1 * numero2;
+             document.getElementById("resultado").innerHTML = resultado;    
+         }
+             
+     
+         function dividir()
+         {
+            
+            var numero1=document.getElementById("txtNumero1").value;
+             var numero2=document.getElementById("txtNumero2").value;
+             numero1 = parseInt(numero1);
+             numero2 = parseInt(numero2);
+         
+             var resultado = numero1 / numero2;
+             document.getElementById("resultado").innerHTML = resultado;    
+         }
+             
+      </script>
+   </head>
+   <body>
+
+    <h1>Calculadora</h1>
+    Numero 1: <input type text="text" id="txtNumero1" size="4" maxlength="3">
+    Numero 2: <input type text="text" id="txtNumero2" size="4" maxlength="3">
+    <input type="button" value="Sumar" onclick="suma()">
+    <input type="button" value="Restar" onclick="resta()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()">
+
+    <div>El resultado es : </div>
+    <div id= "resultado"></div>
+
+
+
+
+   </body>
+</html>
